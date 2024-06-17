@@ -1,0 +1,15 @@
+Svar på følgende spørgsmål
+
+1. Kig på indholdet af den første http GET request fra din browser til serveren. Kan du se en IF-MODIFIED-SINCE linje i http GET’en?
+Nej, jeg kan ikke se en IF-MODIFIED-SINCE linje i http GET’en.
+
+2. Kig på indholdet af server response’et. Returnerer serveren indholdet af filen?
+Ja, det gjorde den. den ligger under: Line-based text data: text/html
+
+3. Kig nu på indholdet af den anden http GET request. Kan du se en IF-MODIFIEDSINCE linje i http GET’en? Hvis du kan, hvilken information følger med linjen?
+Ja, jeg kan se en IF-MODIFIED-SINCE linje i http GET’en. Linjen indeholder information om hvornår filen sidst er blevet ændret.
+
+4. Hvad er http status koden og frasen fra serveren som svar på den anden http GET.
+Returnerer serveren indholdet af filen?
+HTTP/1.1 304 Not Modified
+Den returnerer ikke indholdet af filen, da filen ikke er blevet ændret siden sidst.

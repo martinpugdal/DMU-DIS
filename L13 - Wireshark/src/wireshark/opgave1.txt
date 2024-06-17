@@ -1,0 +1,21 @@
+Svar på følgende spørgsmål ved at kigge i http GET og response beskederne.
+
+1. Kører din browser http version 1.0 eller 1.1? Hvilken version af http kører serveren?
+Request Version: HTTP/1.1
+
+2. Hvilke sprog, hvis nogen, indikerer din browser at den kan acceptere fra serveren?
+Accept-Language: da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7
+
+3. Hvad er din computers IP adresse? Og hvad er serverens IP adresse?
+Source Address: 192.168.1.185
+Destination Address: 128.119.245.12
+
+4. Hvad er statuskoden, som serveren returnerer til din browser?
+Status Code: 304 (Not Modified)
+
+5. Hvornår er HTML filen, du har modtaget, sidst blevet ændret ved serveren?
+If-Modified-Since: Sun, 16 Jun 2024 05:59:02 GMT\r\n
+
+6. Hvor mange bytes fylder indholdet, der er blevet returneret til din browser?
+672 (i følge wireshark)
+Total Length: 658 (i følge response header)
